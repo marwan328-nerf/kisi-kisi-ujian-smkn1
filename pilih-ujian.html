@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Jenis Ujian</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body oncontextmenu="return false;"> 
+
+    <div class="header">
+        <h1><i class="icon-smk"></i> PILIH UJIAN</h1>
+        <p>Akses Terverifikasi. Silakan pilih ujian.</p>
+    </div>
+
+    <div class="container menu-grid-layout">
+        
+      
+      
+        <section class="document-card event-card" onclick="goToViewer('uas.2025.html')">
+            <div class="card-header">
+                <h2>Ujian Akhir Semester Ganjil 2025</h2>
+                <span class="status-tag restricted">AKTIF</span>
+            </div>
+            <p class="description"> kisi-kisi untuk semester ganjil 2025.</p>
+        </section>
+      
+        
+        <section class="document-card event-card" onclick="goToViewer('uts2025-gallery.html')">
+            <div class="card-header">
+                <h2>Ujian Tengah Semester 2026</h2>
+                <span class="status-tag">belum tersedia</span>
+            </div>
+            <p class="description">Kumpulan dokumen untuk ujian tengah semester 2025.</p>
+        </section>
+        
+      
+      <!--<section class="document-card event-card" onclick="goToViewer('praktik2025-gallery.html')">
+            <div class="card-header">
+                <h2>Ujian Praktik Kejuruan 2025</h2>
+                <span class="status-tag restricted">BARU</span>
+            </div>
+            <p class="description">Modul dan panduan untuk ujian praktik.</p>
+        </section>
+
+        <section class="document-card event-card" onclick="goToViewer('to1-2025-gallery.html')">
+            <div class="card-header">
+                <h2>Try Out Mandiri 1</h2>
+                <span class="status-tag">SEGERA</span>
+            </div>
+            <p class="description">Kisi-kisi untuk persiapan try out pertama.</p>
+        </section>
+        
+        <section class="document-card event-card" onclick="goToViewer('to2-2025-gallery.html')">
+            <div class="card-header">
+                <h2>Try Out Mandiri 2</h2>
+                <span class="status-tag">SEGERA</span>
+            </div>
+            <p class="description">Kisi-kisi untuk persiapan try out kedua.</p>
+        </section>
+
+       <section class="document-card event-card" onclick="goToViewer('kelasx-genap-gallery.html')">
+            <div class="card-header">
+                <h2>Ujian Kelas X (Contoh)</h2>
+                <span class="status-tag">ARSIP</span>
+            </div>
+            <p class="description">Materi arsip ujian kelas X semester genap.</p>
+        </section> -->
+        
+    </div>
+    
+    <p class="back-link"><a href="index.html">← Logout dan Kembali ke Verifikasi</a></p>
+
+    <div class="footer">© IAES 2025.</div>
+
+    <script>
+        function goToViewer(targetPage) {
+            // Langsung mengarahkan ke nama file HTML yang berbeda
+            window.location.href = targetPage;
+        }
+        
+        // Proteksi Client-Side
+        document.onkeydown = function(e) {
+            if(e.key === 'F12' || e.keyCode === 123) { e.preventDefault(); return false; }
+            if(e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) { e.preventDefault(); return false; }
+            if(e.ctrlKey && e.key === 'U') { e.preventDefault(); return false; }
+            if(e.ctrlKey && (e.key === 'P' || e.key === 'S')) { e.preventDefault(); return false; }
+        };
+        document.addEventListener('copy', (e) => { e.preventDefault(); alert("Aksi salin (copy) dinonaktifkan."); });
+    </script>
+</body>
+</html>

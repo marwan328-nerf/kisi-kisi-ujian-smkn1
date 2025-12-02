@@ -1,0 +1,353 @@
+
+/* Styling Modern SMK BISA */
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e0f7fa 0%, #b3e5fc 100%); 
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* --- Styling Halaman Utama (Login) --- */
+.center-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container-login {
+    width: 100%;
+    max-width: 450;
+    background-color: white;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.header-login h1 {
+    color: #007bff;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.header-login p {
+    color: #6c757d;
+    font-size: 1em;
+    margin-bottom: 25px;
+}
+
+.form-group-login {
+    display: block;
+    margin-bottom: 15px;
+}
+
+#access-code {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+/* Styling yang dibutuhkan di styles.css */
+.btn-verify-link {
+    text-decoration: none; /* Hapus garis bawah pada link */
+}
+
+.btn-verify { 
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    width: 100%; /* Agar tombol memanjang penuh */
+    margin-top: 15px; 
+}
+
+.btn-verify:hover { 
+    background-color: #218838; 
+}
+
+
+.warning-note-login {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffeeba;
+    font-size: 0.85em;
+    margin-top: 20px;
+}
+
+/* --- Styling Halaman Tujuan (Mapel) --- */
+
+.header {
+    background: #007bff; 
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.document-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #ffc107; /* Garis Aksen */
+}
+
+.card-header {
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.document-card h2 {
+    color: #007bff;
+    margin: 0;
+    font-weight: 600;
+}
+
+.status-tag {
+    background-color: #dc3545; 
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.status-tag.restricted {
+    background-color: #f0ad4e; 
+}
+
+.status-tag.restricted-pro {
+    background-color: #9c27b0; 
+}
+
+
+.download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 18px;
+    background-color: #ffc107; 
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.4);
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #e0a800;
+}
+
+.icon-download {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.back-link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.back-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.error, .success {
+    margin-top: 10px;
+    width: 100%;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40; 
+    color: #adb5bd;
+    margin-top: auto;
+    font-size: 0.85em;
+  }
+
+/* --- HERO SECTION (Header Utama) --- */
+.hero-section {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border-radius: 20%;    
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin-top: 1px;
+    box-sizing: border-box;
+}
+
+
+
+/*animasi gerakkan footer*/
+
+/* ==================================== */
+/* 1. Pengaturan Dasar & Kontainer */
+/* ==================================== */
+
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.rain-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none; /* Agar hujan tidak menghalangi interaksi */
+}
+
+/* ==================================== */
+/* 2. Keyframes & Efek Hujan */
+/* ==================================== */
+@keyframes rain-fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); } 
+}
+/* GANTI BAGIAN INI DI styles.css */
+.rain-drops {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: transparent; 
+    
+    /* Daftar Box-Shadow yang sangat panjang untuk hujan deras */
+    box-shadow: 
+        10vw 0 0 #fff, 20vw -20vh 0 #fff, 30vw -50vh 0 #fff, 40vw -80vh 0 #fff, 
+        5vw -10vh 0 #fff, 15vw -35vh 0 #fff, 25vw -65vh 0 #fff, 35vw -95vh 0 #fff, 
+        45vw -15vh 0 #fff, 55vw -40vh 0 #fff, 65vw -70vh 0 #fff, 75vw -100vh 0 #fff, 
+        85vw -25vh 0 #fff, 95vw -55vh 0 #fff, 7vw -5vh 0 #fff, 18vw -25vh 0 #fff,
+        
+        /* Tambahan Baris untuk Kepadatan Tinggi */
+        1vw -12vh 0 #fff, 12vw -45vh 0 #fff, 22vw -75vh 0 #fff, 32vw -105vh 0 #fff,
+        42vw -2vh 0 #fff, 52vw -32vh 0 #fff, 62vw -62vh 0 #fff, 72vw -92vh 0 #fff,
+        88vw -17vh 0 #fff, 2vw -47vh 0 #fff, 92vw -77vh 0 #fff, 58vw -52vh 0 #fff,
+        78vw -27vh 0 #fff, 8vw -90vh 0 #fff, 19vw -100vh 0 #fff, 29vw -5vh 0 #fff,
+        39vw -35vh 0 #fff, 49vw -65vh 0 #fff, 59vw -95vh 0 #fff, 69vw -10vh 0 #fff,
+        79vw -40vh 0 #fff, 89vw -70vh 0 #fff, 9vw -100vh 0 #fff, 14vw -2vh 0 #fff,
+        24vw -22vh 0 #fff, 34vw -52vh 0 #fff, 44vw -82vh 0 #fff, 54vw -102vh 0 #fff,
+        64vw -7vh 0 #fff, 74vw -37vh 0 #fff, 84vw -67vh 0 #fff, 94vw -97vh 0 #fff,
+        6vw -18vh 0 #fff, 16vw -48vh 0 #fff, 26vw -78vh 0 #fff, 36vw -108vh 0 #fff,
+        
+        /* Dan banyak lagi... */
+        98vw -5vh 0 #fff, 18vw -10vh 0 #fff, 33vw -30vh 0 #fff, 55vw -85vh 0 #fff,
+        77vw -15vh 0 #fff, 2vw -70vh 0 #fff, 21vw -55vh 0 #fff, 41vw -100vh 0 #fff,
+        61vw -35vh 0 #fff, 81vw -80vh 0 #fff, 91vw -10vh 0 #fff, 3vw -40vh 0 #fff;
+
+    animation: rain-fall 1s linear infinite;
+}
+
+/* Lakukan Hal yang Sama untuk Lapisan Kedua (.rain-drops::after) */
+.rain-drops::after {
+    /* ... kode di sini ... */
+    
+    /* Perbanyak daftar Box-Shadow di sini juga */
+    box-shadow: 
+        4vw 0 0 rgba(255, 255, 255, 0.7), 14vw -20vh 0 rgba(255, 255, 255, 0.7), 
+        24vw -50vh 0 rgba(255, 255, 255, 0.7), 34vw -80vh 0 rgba(255, 255, 255, 0.7),
+        58vw -10vh 0 rgba(255, 255, 255, 0.7), 68vw -35vh 0 rgba(255, 255, 255, 0.7), 
+        78vw -65vh 0 rgba(255, 255, 255, 0.7), 88vw -95vh 0 rgba(255, 255, 255, 0.7),
+        
+        /* Tambahan Baris untuk Kepadatan Tinggi (berbeda dari lapisan utama) */
+        1vw -8vh 0 rgba(255, 255, 255, 0.7), 11vw -40vh 0 rgba(255, 255, 255, 0.7),
+        21vw -70vh 0 rgba(255, 255, 255, 0.7), 31vw -100vh 0 rgba(255, 255, 255, 0.7),
+        41vw -18vh 0 rgba(255, 255, 255, 0.7), 51vw -48vh 0 rgba(255, 255, 255, 0.7),
+        61vw -78vh 0 rgba(255, 255, 255, 0.7), 71vw -108vh 0 rgba(255, 255, 255, 0.7),
+        81vw -3vh 0 rgba(255, 255, 255, 0.7), 91vw -33vh 0 rgba(255, 255, 255, 0.7);
+
+    animation: rain-fall 0.5s linear infinite;
+    animation-delay: 0.1s; 
+}
+
+/* ==================================== */
+/* 3. Gaya & Animasi Burung */
+/* ==================================== */
+
+.interactive-bird {
+    position: absolute;
+    z-index: 5; 
+    cursor: pointer;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s; 
+    pointer-events: auto; /* Harus auto agar bisa diklik */
+}
+
+/* Animasi Terbang Ringan */
+@keyframes bird-fly {
+    0% { transform: translateX(0) rotate(0deg); }
+    100% { transform: translateX(50px) rotate(5deg); }
+}
+
+/* KEYFRAMES LEDAKAN */
+@keyframes explode {
+    0% { transform: scale(1) rotate(0deg); opacity: 1; filter: brightness(1); }
+    100% { transform: scale(3) rotate(720deg); opacity: 0; filter: brightness(2); }
+}
+
+/* Kelas yang Memicu LEDAKAN */
+.interactive-bird.exploding {
+    animation: explode 0.5s ease-out forwards !important; 
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAES - Pusat Akses Ujian</title>
+    <!-- Menghubungkan font Poppins dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header class="hero-section">
+            <div class="hero-content">
+                <h1>🛡️ Intelligence Agency Exam Syllabus</h1>
+            </div>
+        </header>
+
+        <main class="container-login">
+            <div class="header-login">
+                <h1>😎 SMK Bisa!</h1>
+                <p>Masukkan Kode Akses Anda:</p>
+            </div>
+
+            <div class="form-group-login">
+                <input type="password" id="access-code" placeholder="Kode Akses Rahasia" onkeypress="handleKeyPress(event)">
+                <button onclick="checkMasterPassword()" class="btn-verify">Akses Website</button>
+                <p id="error-message" class="message"></p>
+            </div>
+        </main>
+        
+        <center><footer class="site-footer">
+            © IAES 2025.
+        </footer></center>
+    </div>
+    
+      <div class="rain-container">
+        <div class="rain-drops"></div>
+
+        <div id="manualBird" class="interactive-bird" 
+             style="left: 50vw; top: 40vh; font-size: 50px; animation: bird-fly 3s infinite alternate;">
+            🗿
+        </div>
+    </div>
+    
+    <div class="content">
+        <section style="background: white; padding: 20px; margin-top: 30px; border-radius: 8px;">
+           
+            <p style="color: black;">.</p>
+        </section>
+        
+    </div>
+</div>
+
+
+    <!-- Script JavaScript untuk logika akses -->
+    <script>
+        // 🔐 DATABASE PASSWORD: Password (Key) akan mengarah ke Halaman File (Value)
+        const PASSWORDS = {
+            'BIKU': 'pilih-ujian.html'
+        };
+
+        function checkMasterPassword() {
+            const input = document.getElementById('access-code').value.toUpperCase(); // Ubah ke huruf besar untuk konsistensi
+            const errorMsg = document.getElementById('error-message');
+            
+            if (PASSWORDS.hasOwnProperty(input)) {
+                const targetPage = PASSWORDS[input];
+                errorMsg.textContent = "Akses Diterima! Mengarahkan ke kisi-kisi...";
+                errorMsg.className = 'message success';
+                
+                // Redirect ke halaman khusus mapel setelah 1 detik
+                setTimeout(() => {
+                    window.location.href = targetPage;
+                }, 1000);
+
+            } else {
+                errorMsg.textContent = "Kode Akses Salah atau Tidak Valid.";
+                errorMsg.className = 'message error';
+            }
+        }
+
+        // Memungkinkan menekan 'Enter' untuk login
+        function handleKeyPress(event) {
+            if (event.keyCode === 13) { // 13 adalah kode tombol 'Enter'
+                checkMasterPassword();
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+
+            
+</body>
+</html>
